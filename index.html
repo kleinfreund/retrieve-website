@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+	<title>retrieve</title>
+
+	<style>
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+
+		body {
+			tab-size: 2;
+			margin: 0;
+			font-size: 1em;
+			line-height: 1.5;
+			font-family: Lato, Numero, sans-serif;
+			background-color: #fff;
+		}
+
+		main {
+			width: min(1000px, 100%);
+			padding: clamp(0.5rem, 3vh, 2.5rem) clamp(0.5rem, 3vw, 2.5rem);
+		}
+
+		footer {
+			margin-top: 5rem;
+		}
+
+		:focus {
+			outline: 3px solid orange;
+		}
+
+		a {
+			color: hsl(225, 100%, 52.5%);
+		}
+
+		h1,
+		h2 {
+			font-family: Cambria, Caladea, Cochin, Georgia, Times, "Times New Roman", serif;
+		}
+
+		h1,
+		h2,
+		p,
+		ul,
+		pre,
+		details {
+			margin-top: 1.25rem;
+			margin-bottom: 0;
+		}
+
+		h1:first-child,
+		h2:first-child,
+		p:first-child,
+		ul:first-child {
+			margin-top: 0;
+		}
+
+		pre {
+			overflow-x: auto;
+			padding: 0.5rem 1rem;
+			border-radius: 4px;
+			background-color: hsl(0, 100%, 95%);
+		}
+
+		code {
+			font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1><a href="/">retrieve</a></h1>
+
+		<p>A convenience wrapper around fetch.</p>
+
+		<ul>
+			<li>
+				Package:
+
+				<a href="https://www.npmjs.com/package/retrieve">
+					<b>npmjs.com</b>/package/retrieve
+				</a>
+			</li>
+
+			<li>
+				Repository:
+
+				<a href="https://github.com/kleinfreund/retrieve">
+					<b>github.com</b>/kleinfreund/retrieve
+				</a>
+			</li>
+		</ul>
+
+		<h2>Usage</h2>
+
+		<p>Open the dev tools' console and try it yourself:</p>
+
+		<pre><code>import { retrieve } from 'retrieve'
+
+const { data } = await retrieve({
+	url: 'https://pokeapi.co/api/v2/pokemon',
+})</code></pre>
+
+		<p>Made with love by <a href="https://kleinfreund.de">Philipp</a>.</p>
+	</main>
+
+	<script type="module">
+		import { retrieve, ResponseError } from 'retrieve'
+
+		Object.defineProperty(window, 'retrieve', { value: retrieve })
+		Object.defineProperty(window, 'ResponseError', { value: ResponseError })
+	</script>
+</body>
+
+</html>

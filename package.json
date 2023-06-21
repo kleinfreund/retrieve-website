@@ -1,0 +1,26 @@
+{
+	"name": "retrieve-website",
+	"version": "0.0.0",
+	"license": "MIT",
+	"description": "Demo website for the retrieve package",
+	"author": {
+		"name": "Philipp Rudloff",
+		"url": "https://kleinfreund.de"
+	},
+	"homepage": "https://retrieve.netlify.app",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kleinfreund/retrieve-website.git"
+	},
+	"scripts": {
+		"start": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"retrieve": "1.0.0"
+	},
+	"devDependencies": {
+		"vite": "^4.3.9"
+	}
+}
