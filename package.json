@@ -18,9 +18,9 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"retrieve": "1.0.0"
+		"retrieve": "1.1.1"
 	},
 	"devDependencies": {
-		"vite": "^4.3.9"
+		"vite": "^5.0.2"
 	}
 }
