@@ -113,10 +113,11 @@ const { data } = await retrieve({
 	</main>
 
 	<script type="module">
-		import { retrieve, ResponseError } from 'retrieve'
+		import { retrieve, ResponseError, RetrieveResponse } from 'retrieve'
 
 		Object.defineProperty(window, 'retrieve', { value: retrieve })
 		Object.defineProperty(window, 'ResponseError', { value: ResponseError })
+		Object.defineProperty(window, 'RetrieveResponse', { value: RetrieveResponse })
 	</script>
 </body>
 
